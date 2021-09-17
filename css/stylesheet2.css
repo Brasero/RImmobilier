@@ -1,0 +1,157 @@
+header
+{
+    background: url("../img/headerBackground.jpg");
+	background-clip: border-box;
+	background-size: cover;
+    background-position: bottom;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1, header form
+{
+	display: flex;
+	background: rgba(240,240,240,0.6);
+	padding: 10px;
+	margin: 0;
+	width: 517px;
+	align-items: center;
+	justify-content: center;
+}
+
+nav a:hover
+{
+	color: #c73131;
+	font-weight: bold;
+	border-color: #c73131;
+	cursor: pointer;
+}
+
+nav a
+{
+    color: white;
+}
+
+.brand
+{
+    color: #c73131;
+	background :black;
+	padding: 5px 8px;
+	border-radius: 25px 10px;
+	font-weight: bold;
+	font-size: 30px;
+	margin-left: 20px;
+	width: fit-content;
+}
+
+#proposition
+{
+	display: none;
+	background: white;
+	border-radius: 10px;
+	padding: 5px;
+	max-height: 75px;
+	overflow-y: scroll;
+}
+
+#proposition a:hover
+{
+	cursor: pointer;
+	background: #c73131;
+	border-radius: 15px 10px;
+	color: white;
+	padding: 2px 5px;
+	width: 100%;
+}
+
+#proposition::-webkit-scrollbar
+{
+	background: rgba(255,255,255,0.4);
+	width: 4px;
+	border-radius: 100%;
+}
+
+#proposition::-webkit-scrollbar-thumb
+{
+	background: rgba(210,210,210,0.7);
+	border-radius: 100%;
+}
+
+.paire, .impaire
+{
+	margin-top: 10px;
+	background: white;
+	display: flex;
+	height: 200px;
+	justify-content: space-between;
+}
+
+.paire:hover, .impaire:hover
+{
+    transform: scale(1.5);
+    z-index: 1100;
+}
+
+.left, .right
+{
+	height: 100%;
+	background: linear-gradient(90deg, black, transparent);
+	display: none;
+}
+
+#center
+{
+	height: 100%;
+	width: -webkit-fill-available;
+	background: transparent;
+}
+
+.right
+{
+    background: linear-gradient(90deg, transparent, black);
+    display: grid;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.left
+{
+    display: grid;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+#img:hover #left, #img:hover #right
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#right img, #left img
+{
+	border-radius: 50px;
+}
+
+#img
+{
+	display: flex;
+	justify-content: center;
+	width: 300px;
+	background-clip: border-box;
+	background-position: center;
+	background-size: cover;
+}
+
+.searchInfo
+{
+    display: flex;
+}
+
+.plusInfo
+{
+    align-self: flex-end;
+}

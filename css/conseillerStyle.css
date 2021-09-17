@@ -1,0 +1,112 @@
+body
+{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+nav ul
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+li
+{
+    list-style: none;
+    color: black;
+}
+
+a 
+{
+    text-decoration: none;
+}
+
+li:hover
+{
+    color: #c73131;
+    text-decoration: underline;
+}
+
+header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url('../img/headerBackground.jpg');
+    background-clip: border-box;
+    background-size: cover;
+    background-position: bottom;
+    height: 350px;
+    width: -webkit-fill-available;
+}
+
+header h1
+{
+    width: fit-content;
+    background: black;
+    padding: 5px 8px;
+    border-radius: 25px 10px;
+}
+
+#headerContainer
+{
+    padding: 10px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 15px;
+    box-shadow: 0 0 10px 5px silver;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#header2
+{
+    color: #c73131;
+}
+
+
+nav h1
+{
+    margin-left: 5px;
+}
+
+.photoPlace
+{
+    height: 200px;
+    width: 150px;
+    float: left;
+    margin: 0 3px;
+}
+
+.IDPhoto
+{
+    color: white;
+    padding: 2px;
+    text-align: center;
+    font-size: 12px;
+    height: 14px;
+    width: 14px;
+    background: linear-gradient(90deg, black, transparent);
+}
+
+.transaction
+{
+    padding: 2px 8px;
+    border: 1px solid black;
+    color: #c73131;
+    background-color: black;
+    width: fit-content;
+    border-radius: 15px 10px;
+    margin: 5px 0;
+}
+
+.more
+{   
+    margin-bottom: 20px;
+}
